@@ -12,16 +12,20 @@ int main(/*int argc, char *argv[]*/){
     double y1 = -1.5,y2=1.5; 
     int largura =6;
     int altura =6;
-
+    int interacoes =0;
     double x =(x2-x1)/largura; 
     double y = (y2-y1)/altura;
 
-    for(long int i=0;i<12;i++){
-        for(double i1=0.0;i1<x;i1+=0.001){
-
-            for(double i2=0.0;i2<y;i2+=0.001){
-                double valor = x+y - i;
+    for(int i1=0;i1<largura;i1++){
+        for(double i2=0;i2<altura;i2++){
+            
+            double c_real = x1+i1*(x);
+            double c_imag = y1+i2*(y);
+            
+            while(((x*x)+(y*y))<=4.0 && interacoes<total){
+                int valor = (x*x) + 2*x*y - (y*y);
                 printf("valor: %lf  e %ld\n",valor,i);
+                interacoes++;
             }
         }
     }
