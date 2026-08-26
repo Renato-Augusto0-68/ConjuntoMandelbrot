@@ -6,7 +6,7 @@ main.o: main.c
 
 
 run : ConjuntoMandelbrot
-	./ConjuntoMandelbrot
+			./ConjuntoMandelbrot
 
 clean : 
 		rm -f *.o a.out ConjuntoMandelbrot
