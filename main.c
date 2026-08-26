@@ -1,8 +1,17 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+//Teste de mandelbrot na raça
 
 int main(){
-    printf("hello world\n");
+    int i=0;
+
+    int Z=0;
+
+    for(int i=0;i<10;i++){
+
+        
+    }
+    
+
     return 0;
 }
