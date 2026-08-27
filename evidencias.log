@@ -1,0 +1,7 @@
+Script started on 2026-08-27 09:09:33-03:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="154" LINES="12"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ls
+[?2004lMakefile  evidencias.log  main.c
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [?2004l
+exit
+
+Script done on 2026-08-27 09:18:40-03:00 [COMMAND_EXIT_CODE="0"]
