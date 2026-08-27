@@ -5,7 +5,7 @@
 
 //Teste de mandelbrot na raça
 
-void abrirarquivo(int mode, double *valores,int larg){
+void abrirarquivo(int mode, int *valores,int larg, int altura){
     FILE *arq;
     if (mode==1)
         arq = fopen("mandelbrot_rass_serial.pgm","w");
@@ -18,14 +18,17 @@ void abrirarquivo(int mode, double *valores,int larg){
     
     if(arq!=NULL){
         int cont =0;
+        int cont2=0;
         while(valores!=NULL){
-            fprintf(arq,"%.2lf ",*valores);
-            if(cont==larg){
+            fprintf(arq,"%d ",*valores);
+            if(cont==(larg-1)){
                 fprintf(arq,"\n");
                 cont = 0;
-            }else{
-                cont++;}
+            }else if (cont<(larg-1)){
+                cont++;
+                cont2++;}
             valores ++;
+            if (cont2==altura){break;}
         }
     }
     fclose(arq);
@@ -34,37 +37,36 @@ void abrirarquivo(int mode, double *valores,int larg){
 int main(/*int argc, char *argv[]*/){
     int i=0;
     double total=50.0;
-    double Z=0.0;
+   
     double x1 = -2.0, x2=1.0;
     double y1 = -1.5,y2=1.5; 
     int largura =4;
     int altura =4;
-    double *valores = (double *) malloc(sizeof(double)*largura*altura);    
-    double x =(x2-x1)/largura; 
-    double y = (y2-y1)/altura;
-
-    for(int i1=0;i1<largura;i1++){
+    double Z=0.0;   
+    double x_p =(x2-x1)/largura; 
+    double y_p = (y2-y1)/altura;
+    
+    int *valores = (int *) malloc(sizeof(int)*largura*altura);
+    for(int i1=0;i1<altura;i1++){
         
-        for(double i2=0;i2<altura;i2++){
+        for(int i2=0;i2<largura;i2++){
+            double x=0.0;
+            double y=0.0;
+            double c_real = x1+i2*(x_p);
+            double c_imag = y1+i1*(y_p);
             double interacoes =0.0;
-
-            double c_real = x1+i1*(x);
-            double c_imag = y1+i2*(y);
             
             while(((x*x)+(y*y))<=4.0 && interacoes<total){
-                double x_temp = (x*x) - (y*y) + x1; 
-                y=2*x*y +(y1);
-                x=x_temp;
+                double x_temp = (x*x) - (y*y) + c_real; 
+                y= 2*x*y +(c_imag);
+                x= x_temp;
                 interacoes++;
             }
-            if(interacoes==total){
-                double valor = (interacoes/total)*255.0;
-                *valores = valor;
-                valores++;
-            }
-        }
-
-        abrirarquivo(1,valores,largura);
-    }
+            double valor = ((255.0*interacoes)/total);
+            valores[i1*largura + i2] = (int)valor;
+            
+            
+        }  
+    }abrirarquivo(1,valores,largura,altura);
     return 0;
 }

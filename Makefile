@@ -9,7 +9,7 @@ run : ConjuntoMandelbrot
 			./ConjuntoMandelbrot -lm
 
 clean : 
-		rm -f *.o a.out ConjuntoMandelbrot
+		rm -f *.o a.out *.pgm ConjuntoMandelbrot
 
 
 .PHONY: run clean
