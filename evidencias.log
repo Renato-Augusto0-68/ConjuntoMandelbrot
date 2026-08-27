@@ -487,4 +487,42 @@ gcc main.o -o ConjuntoMandelbrot -lm
 gcc main.o -o ConjuntoMandelbrot -lm
 ./ConjuntoMandelbrot -lm
 make: *** [Makefile:9: run] Segmentation fault (core dumped)
-[?2004h]0;devcontainers@PcdeRe28: ~/dev/
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make c[Krun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run[3Pclear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ clearmake run[3Pclearmake clean[1Prun clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[5Pclearmake run
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ makec[K clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prunclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./main.o
+[?2004lbash: ./main.o: Permission denied
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./main.o[C[K[K
+[?2004lbash: ./main: No such file or directory
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./main[K[K[K[KConjunto [KMandelbrot
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean./ConjuntoMandelbrot
+[?2004lbash: ./ConjuntoMandelbrot: No such file or directory
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrotm./ConjuntoMandelbrota./ConjuntoMandelbrotk./ConjuntoMandelbrote./ConjuntoMandelbrot ./ConjuntoMandelbrot
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/Co

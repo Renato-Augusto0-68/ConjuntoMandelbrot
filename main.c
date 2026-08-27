@@ -30,36 +30,35 @@ void abrirarquivo(int mode, int *valores,int larg, int altura){
 int main(/*int argc, char *argv[]*/){
     int i=0;
     double total=50.0;
-   
     double x1 = -2.0, x2=1.0;
     double y1 = -1.5,y2=1.5; 
     int largura =4;
-    int altura =4;
-    double Z=0.0;   
-    double x_p =(x2-x1)/largura; 
-    double y_p = (y2-y1)/altura;
-    
-    int *valores = (int *) malloc(sizeof(int)*largura*altura);
-    for(int i1=0;i1<altura;i1++){
-        
-        for(int i2=0;i2<largura;i2++){
-            double x=0.0;
-            double y=0.0;
-            double c_real = x1+i2*(x_p);
-            double c_imag = y1+i1*(y_p);
-            double interacoes =0.0;
+    int altura =4;  
+
+    for(int modo=1;i<=4;modo++){
+        int *valores = (int *) malloc(sizeof(int)*largura*altura);
+        double Z=0.0;
+        double x_p =(x2-x1)/largura; 
+        double y_p = (y2-y1)/altura;
+        for(int i1=0;i1<altura;i1++){
+            for(int i2=0;i2<largura;i2++){
+                double x=0.0;
+                double y=0.0;
+                double c_real = x1+i2*(x_p);
+                double c_imag = y1+i1*(y_p);
+                double interacoes =0.0;
             
-            while(((x*x)+(y*y))<=4.0 && interacoes<total){
-                double x_temp = (x*x) - (y*y) + c_real; 
-                y= 2*x*y +(c_imag);
-                x= x_temp;
-                interacoes++;
-            }
-            double valor = ((255.0*interacoes)/total);
-            valores[i1*largura + i2] = (int)valor;
-            
-            
-        }  
-    }abrirarquivo(1,valores,largura,altura);
+                while(((x*x)+(y*y))<=4.0 && interacoes<total){
+                    double x_temp = (x*x) - (y*y) + c_real; 
+                    y= 2*x*y +(c_imag);
+                    x= x_temp;
+                    interacoes++;
+                }
+                double valor = ((255.0*interacoes)/total);
+                valores[i1*largura + i2] = (int)valor;            
+            }  
+        }
+        abrirarquivo(modo,valores,largura,altura);
+    }
     return 0;
 }
