@@ -24,7 +24,6 @@ int main(/*int argc, char *argv[]*/){
             
             while(((x*x)+(y*y))<=4.0 && interacoes<total){
                 int valor = (x*x) + 2*x*y - (y*y);
-                printf("valor: %lf  e %ld\n",valor,i);
                 interacoes++;
             }
         }
