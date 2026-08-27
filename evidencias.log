@@ -5,3 +5,146 @@ Script started on 2026-08-27 09:09:33-03:00 [TERM="xterm-256color" TTY="/dev/pts
 exit
 
 Script done on 2026-08-27 09:18:40-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-27 09:18:44-03:00 [TERM="xterm-256color" TTY="/dev/pts/12" COLUMNS="154" LINES="12"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ lscode .d ConjuntoMandelbrotgit clone https://github.com/Renato-Augusto0-68/ConjuntoMandelbrot.git[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kmake run
+[?2004lgcc -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+rodou[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runls[Kcode .[K[K[K[K[K[Kmake clean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+rodou
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ,a[K[Kmake clean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prunclean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:10:10:[m[K [01;31m[Kerror: [m[Kexpected iteration declaration or initialization before ‘[01m[K;[m[K’ token
+   10 |     for ([01;31m[K;[m[K i < 10; ++i) {
+      |          [01;31m[K^[m[K
+[01m[Kmain.c:11:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   11 |         [01;35m[Kc[m[K(i);
+      |         [01;35m[K^[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:11:5:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   11 |     [01;35m[Kc[m[K(i){
+      |     [01;35m[K^[m[K
+[01m[Kmain.c:11:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K{[m[K’ token
+   11 |     c(i)[01;31m[K{[m[K
+      |         [01;31m[K^[m[K
+      |         [32m[K;[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kc[m[K’:
+[01m[Kmain.c:6:7:[m[K [01;35m[Kwarning: [m[Ktype of ‘[01m[Ki[m[K’ defaults to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-int-Wimplicit-int]8;;[m[K]
+    6 |  void [01;35m[Kc[m[K(i){
+      |       [01;35m[K^[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:16:10:[m[K [01;31m[Kerror: [m[Kexpected iteration declaration or initialization before ‘[01m[K;[m[K’ token
+   16 |     for ([01;31m[K;[m[K i < 10; ++i) {
+      |          [01;31m[K^[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kc[m[K’:
+[01m[Kmain.c:6:7:[m[K [01;35m[Kwarning: [m[Ktype of ‘[01m[Ki[m[K’ defaults to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-int-Wimplicit-int]8;;[m[K]
+    6 |  void [01;35m[Kc[m[K(i){
+      |       [01;35m[K^[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:14:10:[m[K [01;31m[Kerror: [m[Kexpected iteration declaration or initialization before ‘[01m[K;[m[K’ token
+   14 |     for ([01;31m[K;[m[K i < 10; ++i) {
+      |          [01;31m[K^[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kc[m[K’:
+[01m[Kmain.c:6:7:[m[K [01;35m[Kwarning: [m[Ktype of ‘[01m[Ki[m[K’ defaults to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-int-Wimplicit-int]8;;[m[K]
+    6 |  void [01;35m[Kc[m[K(i){
+      |       [01;35m[K^[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:14:10:[m[K [01;31m[Kerror: [m[Kexpected iteration declaration or initialization before ‘[01m[Ki[m[K’
+   14 |     for ([01;31m[Ki[m[K; i < 10; ++i) {
+      |          [01;31m[K^[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kc[m[K’:
+[01m[Kmain.c:6:7:[m[K [01;35m[Kwarning: [m[Ktype of ‘[01m[Ki[m[K’ defaults to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-int-Wimplicit-int]8;;[m[K]
+    6 |  void [01;35m[Kc[m[K(i){
+      |       [01;35m[K^[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:14:10:[m[K [01;31m[Kerror: [m[Kexpected iteration declaration or initialization before ‘[01m[Ki[m[K’
+   14 |     for ([01;31m[Ki[m[K; i < 10; ++i) {
+      |          [01;31m[K^[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kc[m[K’:
+[01m[Kmain.c:6:7:[m[K [01;35m[Kwarning: [m[Ktype of ‘[01m[Ki[m[K’ defaults to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-int-Wimplicit-int]8;;[m[K]
+    6 |  void [01;35m[Kc[m[K(i){
+      |       [01;35m[K^[m[K
+gcc main.o -o ConjuntoMandelbrot -lm
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0x58): undefined reference to `GOMP_parallel'
+/usr/bin/ld: main.o: in function `main._omp_fn.0':
+main.c:(.text+0x75): undefined reference to `omp_get_num_threads'
+/usr/bin/ld: main.c:(.text+0x7c): undefined reference to `omp_get_thread_num'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: ConjuntoMandelbrot] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[K[K[K[K[K[K[K[K[K[Kclear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ a[Kmake run
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kc[m[K’:
+[01m[Kmain.c:7:7:[m[K [01;35m[Kwarning: [m[Ktype of ‘[01m[Ki[m[K’ defaults to ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-int-Wimplicit-int]8;;[m[K]
+    7 |  void [01;35m[Kc[m[K(i){
+      |       [01;35m[K^[m[K
+gcc main.o -o ConjuntoMandelbrot -lm
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0x58): undefined reference to `GOMP_parallel'
+/usr/bin/ld: main.o: in function `main._omp_fn.0':
+main.c:(.text+0x75): undefined reference to `omp_get_num_threads'
+/usr/bin/ld: main.c:(.text+0x7c): undefined reference to `omp_get_thread_num'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: ConjuntoMandelbrot] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -fopenmp -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:16:9:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kc[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+   16 |         [01;35m[Kc[m[K(i);
+      |         [01;35m[K^[m[K
+gcc main.o -o ConjuntoMandelbrot -lm
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0x2d): undefined reference to `GOMP_parallel'
+/usr/bin/ld: main.o: in function `main._omp_fn.0':
+main.c:(.text+0x4a): undefined reference to `omp_get_num_threads'
+/usr/bin/ld: main.c:(.text+0x51): undefined reference to `omp_get_thread_num'
+/usr/bin/ld: main.c:(.text+0x8b): undefined reference to `c'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: ConjuntoMandelbrot] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run[3Pclear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ clearmake run[3Pclearmake clean
+[?2004lrm -f *.o a.out ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMa

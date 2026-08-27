@@ -2,7 +2,7 @@ ConjuntoMandelbrot: main.o
 					gcc main.o -o ConjuntoMandelbrot -lm
 
 main.o: main.c
-	gcc -c main.c -o main.o -lm
+	gcc -lpthread -c main.c -o main.o -lm
 
 
 run : ConjuntoMandelbrot

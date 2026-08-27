@@ -1,12 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <pthread.h>
 //Teste de mandelbrot na raça
+
+
 
 int main(/*int argc, char *argv[]*/){
     int i=0;
 
-    double total=10;
+    
+    
+    /*
+    double total=10.0;
     double Z=0.0;
     double x1 = -2.0, x2=1.0;
     double y1 = -1.5,y2=1.5; 
@@ -36,8 +42,6 @@ int main(/*int argc, char *argv[]*/){
                 valores++;
             }
         }
-    }
-
-
+    }*/
     return 0;
 }
