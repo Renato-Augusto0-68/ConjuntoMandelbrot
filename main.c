@@ -2,16 +2,29 @@
 #include <stdlib.h>
 #include <math.h>
 #include <pthread.h>
+
 //Teste de mandelbrot na raça
 
+void abrirarquivo(int mode){
+    FILE *arq;
+    
 
+    if (mode==1)
+        arq = fopen("mandelbrot_rass_serial.pgm,","w");
+    if (mode==2)
+        arq=fopen("mandelbrot_rass_openmp.pgm","w");
+    if (mode==3)
+        arq = fopen("mandelbrot_rass_pthreads1.pgm,","w");
+    if (mode==4)
+        arq=fopen("mandelbrot_rass_pthreads2.pgm","w");
+}   
 
 int main(/*int argc, char *argv[]*/){
     int i=0;
 
     
     
-    /*
+    
     double total=10.0;
     double Z=0.0;
     double x1 = -2.0, x2=1.0;
@@ -42,6 +55,6 @@ int main(/*int argc, char *argv[]*/){
                 valores++;
             }
         }
-    }*/
+    }
     return 0;
 }
