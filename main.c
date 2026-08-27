@@ -17,18 +17,11 @@ void abrirarquivo(int mode, int *valores,int larg, int altura){
         arq=fopen("mandelbrot_rass_pthreads2.pgm","w");
     
     if(arq!=NULL){
-        int cont =0;
-        int cont2=0;
-        while(valores!=NULL){
-            fprintf(arq,"%d ",*valores);
-            if(cont==(larg-1)){
-                fprintf(arq,"\n");
-                cont = 0;
-            }else if (cont<(larg-1)){
-                cont++;
-                cont2++;}
-            valores ++;
-            if (cont2==altura){break;}
+        for(int cont=0;cont<larg;cont++){
+            for(int cont2=0;cont2<altura;cont2++){
+                fprintf(arq,"%d ",valores[cont*larg+cont2]);
+            }
+            fprintf(arq,"\n");
         }
     }
     fclose(arq);
