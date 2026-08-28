@@ -119,6 +119,9 @@ int main(/*int argc, char *argv[]*/){
                         valores1[i1*largura + i2] = (int)valor;            
                     }
             }if(modo==2){
+                #pragma omp parallel num_threads(num_threads)
+                {
+                    #pragma omp parallel for    
                     for(int i2=0;i2<largura;i2++){
                         double x=0.0;
                         double y=0.0;
@@ -135,6 +138,7 @@ int main(/*int argc, char *argv[]*/){
                         }
                         double valor = ((255.0*interacoes)/total);
                         valores2[i1*largura + i2] = (int)valor;            
+                        }
                     }  
             }if(modo==3){
                     for(int i2=0;i2<largura;i2++){

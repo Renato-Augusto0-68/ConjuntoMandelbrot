@@ -915,4 +915,101 @@ make: *** [Makefile:9: run] Segmentation fault (core dumped)
 [?2004lgcc -lpthread -c main.c -o main.o -lm
 gcc main.o -o ConjuntoMandelbrot -lm
 ./ConjuntoMandelbrot -lm
-make: *** [Makefile:9: run] Segmentation fault (c
+make: *** [Makefile:9: run] Segmentation fault (ciners@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ mak e[K[Ke clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [?2004l
+exit
+
+Script done on 2026-08-28 16:26:56-03:00 [COMMAND_EXIT_CODE="0"]
+Script started on 2026-08-28 19:20:35-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="95" LINES="9"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ script -a evidencias.log[14Pmake clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run[Kmake runscript -a evidencias.log[14Pmake clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:176:1:[m[K [01;31m[Kerror: [m[Kexpected declaration or statement at end of input
+  176 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K[A[K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -fopenmp -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0x8a8): undefined reference to `GOMP_parallel'
+/usr/bin/ld: main.o: in function `main._omp_fn.0':
+main.c:(.text+0xca3): undefined reference to `GOMP_parallel'
+/usr/bin/ld: main.o: in function `main._omp_fn.1':
+main.c:(.text+0xd57): undefined reference to `omp_get_num_threads'
+/usr/bin/ld: main.c:(.text+0xd5f): undefined reference to `omp_get_thread_num'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: ConjuntoMandelbrot] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0x8a8): undefined reference to `GOMP_parallel'
+/usr/bin/ld: main.o: in function `main._omp_fn.0':
+main.c:(.text+0xca3): undefined reference to `GOMP_parallel'
+/usr/bin/ld: main.o: in function `main._omp_fn.1':
+main.c:(.text+0xd57): undefined reference to `omp_get_num_threads'
+/usr/bin/ld: main.c:(.text+0xd5f): undefined reference to `omp_get_thread_num'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: Conju

@@ -1,12 +1,12 @@
 ConjuntoMandelbrot: main.o
-					gcc main.o -o ConjuntoMandelbrot -lm
+					gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
 
 main.o: main.c
-	gcc -lpthread -c main.c -o main.o -lm
+	gcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
 
 
 run : ConjuntoMandelbrot
-			./ConjuntoMandelbrot -lm
+			./ConjuntoMandelbrot fopenmp -lpthread -lm
 
 clean : 
 		rm -f *.o a.out *.pgm ConjuntoMandelbrot
