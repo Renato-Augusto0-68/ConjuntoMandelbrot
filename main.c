@@ -78,8 +78,8 @@ int main(/*int argc, char *argv[]*/){
         double Z=0.0;
         double x_p =(x2-x1)/largura; 
         double y_p = (y2-y1)/altura;
-        
         dados infos[num_threads];
+        dados infos3[num_threads/2];
         int v_cont = largura/num_threads;  
         pthread_t val[num_threads];
         for(int i1=0;i1<altura;i1++){          
@@ -99,7 +99,6 @@ int main(/*int argc, char *argv[]*/){
                         infos[i].fim=(i+1)*v_cont;
                     pthread_t v = val[i];
                     pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos[i]);
-                    //pthread_join(v,NULL);
                     
                 }  
                 for(int i=0;i<num_threads;i++){
@@ -147,23 +146,31 @@ int main(/*int argc, char *argv[]*/){
                         }
                     }  
             }if(modo==3){
-                    for(int i2=0;i2<largura;i2++){
-                        double x=0.0;
-                        double y=0.0;
-                        double c_real = x1+i2*(x_p);
-                        double c_imag = y1+i1*(y_p);
-                        double interacoes =0.0;
-
-
-                        while(((x*x)+(y*y))<=4.0 && interacoes<total){
-                            double x_temp = (x*x) - (y*y) + c_real; 
-                            y= 2*x*y +(c_imag);
-                            x= x_temp;
-                            interacoes++;
-                        }
-                        double valor = ((255.0*interacoes)/total);
-                        valores3[i1*largura+ i2] = (int)valor;            
-                    }     
+                int valor = num_threads/2;
+                #pragma omp parallel num_threads(valor)
+                { 
+                    #pragma omp parallel for
+                    for(int i=0;i<valor;i++){
+                        infos[i].x_p=x_p; 
+                        infos[i].total=total;
+                        infos[i].larg = largura;
+                        infos[i].y_p=y_p;
+                        infos[i].i1=i1;
+                        infos[i].storage=valores3;
+                        int valr_i = v_cont*i;
+                        infos[i].inicio=valr_i;                    
+                        if (i==valor-1)                   
+                            infos[i].fim=largura;
+                        else
+                            infos[i].fim=(i+1)*v_cont;
+                        pthread_t v = val[i];
+                        pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos[i]);
+                    
+                    }  
+                    for(int i=0;i<valor;i++){
+                        pthread_t v = val[i];
+                        pthread_join(v,NULL);
+                    }
             }
         }
         if (modo==1)
@@ -174,6 +181,7 @@ int main(/*int argc, char *argv[]*/){
             abrirarquivo(modo,valores3,largura,altura);
         if (modo==4)
             abrirarquivo(modo,valores4,largura,altura);
+     }
     }
     free(valores1);
     free(valores4);
