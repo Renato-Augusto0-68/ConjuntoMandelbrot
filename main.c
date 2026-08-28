@@ -65,12 +65,12 @@ int main(/*int argc, char *argv[]*/){
     //if (argc==5)
     
     int i=0;
-    double total=50.0;
+    double total=40.0;
     double x1 = -2.0, x2=1.0;
     double y1 = -1.5,y2=1.5; 
-    int num_threads=3;
-    int largura =4;
-    int altura =4;  
+    int num_threads=4;
+    int largura =10;
+    int altura =6;  
     int *valores1 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores2 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores3 = (int *) malloc(sizeof(int)*largura*altura);
@@ -116,7 +116,7 @@ int main(/*int argc, char *argv[]*/){
                             interacoes++;
                         }
                         double valor = ((255.0*interacoes)/total);
-                        valores1[i1*largura + i2] = (int)valor;            
+                        valores1[i1*altura + i2] = (int)valor;            
                     }
             }if(modo==2){
                     for(int i2=0;i2<largura;i2++){
@@ -134,7 +134,7 @@ int main(/*int argc, char *argv[]*/){
                             interacoes++;
                         }
                         double valor = ((255.0*interacoes)/total);
-                        valores2[i1*largura + i2] = (int)valor;            
+                        valores2[i1*altura + i2] = (int)valor;            
                     }  
             }if(modo==3){
                     for(int i2=0;i2<largura;i2++){
@@ -152,7 +152,7 @@ int main(/*int argc, char *argv[]*/){
                             interacoes++;
                         }
                         double valor = ((255.0*interacoes)/total);
-                        valores3[i1*largura + i2] = (int)valor;            
+                        valores3[i1*altura + i2] = (int)valor;            
                     }     
             }
         }
