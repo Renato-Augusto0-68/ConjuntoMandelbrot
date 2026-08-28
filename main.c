@@ -17,7 +17,8 @@ typedef struct dados{
 }dados;
 
 
-void *calcularXY(void *arg){
+
+void *calcularXY_pthrd(void *arg){
     dados *info = (dados *)arg;
     for(int i2=(info->inicio);i2<info->fim;i2++){
         double x=0.0;
@@ -49,9 +50,9 @@ void abrirarquivo(int mode, int *valores,int larg, int altura){
         arq=fopen("mandelbrot_rass_pthreads2.pgm","w");
     
     if(arq!=NULL){
-        for(int cont=0;cont<larg;cont++){
-            for(int cont2=0;cont2<altura;cont2++){
-                fprintf(arq,"%d ",valores[cont*larg+cont2]);
+        for(int cont=0;cont<altura;cont++){
+            for(int cont2=0;cont2<larg;cont2++){
+                fprintf(arq,"%d ",valores[cont*altura+cont2]);
             }
             fprintf(arq,"\n");
         }
@@ -60,6 +61,9 @@ void abrirarquivo(int mode, int *valores,int larg, int altura){
 }   
 
 int main(/*int argc, char *argv[]*/){
+    
+    //if (argc==5)
+    
     int i=0;
     double total=50.0;
     double x1 = -2.0, x2=1.0;
@@ -72,12 +76,12 @@ int main(/*int argc, char *argv[]*/){
     int *valores3 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores4 = (int *) malloc(sizeof(int)*largura*altura);
     for(int modo=1;i<=4;modo++){
-        dados infos;
         double Z=0.0;
         double x_p =(x2-x1)/largura; 
         double y_p = (y2-y1)/altura;
         for(int i1=0;i1<altura;i1++){          
-            if(modo ==4){
+            if(modo==4){
+                dados infos;
                 int v_cont = total/num_threads;
                 infos.x_p=x_p; 
                 infos.total=total;
@@ -92,7 +96,7 @@ int main(/*int argc, char *argv[]*/){
                     infos.inicio=valr_i;
                     infos.fim=fim;
                     pthread_t v = val[i];
-                    pthread_create(&v,NULL,calcularXY,(void*)&infos);
+                    pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos);
                     pthread_join(v,NULL);
                     
                 }  
@@ -161,5 +165,9 @@ int main(/*int argc, char *argv[]*/){
         if (modo==4)
             abrirarquivo(modo,valores4,largura,altura);
     }
+    free(valores1);
+    free(valores4);
+    free(valores2);
+    free(valores3);
     return 0;
 }
