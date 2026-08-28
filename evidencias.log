@@ -525,4 +525,201 @@ make: *** [Makefile:9: run] Segmentation fault (core dumped)
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrotm./ConjuntoMandelbrota./ConjuntoMandelbrotk./ConjuntoMandelbrote./ConjuntoMandelbrot ./ConjuntoMandelbrot
 [?2004lgcc -lpthread -c main.c -o main.o -lm
 gcc main.o -o ConjuntoMandelbrot -lm
-[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/Co
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make ./ConjuntoMandelbrot[5P./ConjuntoMandelbrot
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ clearmake clean[5Pclearmake clean./ConjuntoMandelbrot[10Pmake clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[K[K[K[Kr[K[Krun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+free(): double free detected in tcache 2
+make: *** [Makefile:9: run] Aborted (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prunclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KcalcularXY[m[K’:
+[01m[Kmain.c:22:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ redeclared as different kind of symbol
+   22 |     dados *[01;31m[Kinfo[m[K = (dados*) info;
+      |            [01;31m[K^~~~[m[K
+[01m[Kmain.c:20:25:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kinfo[m[K’ with type ‘[01m[Kdados *[m[K’
+   20 | void *calcularXY([01;36m[Kdados *info[m[K){
+      |                  [01;36m[K~~~~~~~^~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:101:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kpthread_create[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  101 |                     pthread_create([01;35m[Kval[i][m[K,NULL,calcularXY,(void*)&infos);
+      |                                    [01;35m[K~~~^~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kpthread_t {aka long unsigned int}[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:202:50:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_t * restrict[m[K’ {aka ‘[01m[Klong unsigned int * restrict[m[K’} but argument is of type ‘[01m[Kpthread_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  202 | extern int pthread_create ([01;36m[Kpthread_t *__restrict __newthread[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kmain.c:101:48:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  101 |                     pthread_create(val[i],NULL,[01;35m[KcalcularXY[m[K,(void*)&infos);
+      |                                                [01;35m[K^~~~~~~~~~[m[K
+      |                                                [01;35m[K|[m[K
+      |                                                [01;35m[Kvoid * (*)(dados *)[m[K
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid * (*)(dados *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:151:21:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kptrhead_join[m[K’; did you mean ‘[01m[Kpthread_join[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  151 |                     [01;35m[Kptrhead_join[m[K(val[i],NULL);
+      |                     [01;35m[K^~~~~~~~~~~~[m[K
+      |                     [32m[Kpthread_join[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KcalcularXY[m[K’:
+[01m[Kmain.c:22:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ redeclared as different kind of symbol
+   22 |     dados *[01;31m[Kinfo[m[K = (dados*) info;
+      |            [01;31m[K^~~~[m[K
+[01m[Kmain.c:20:25:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kinfo[m[K’ with type ‘[01m[Kdados *[m[K’
+   20 | void *calcularXY([01;36m[Kdados *info[m[K){
+      |                  [01;36m[K~~~~~~~^~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:101:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kpthread_create[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  101 |                     pthread_create([01;35m[Kval[i][m[K,NULL,calcularXY,(void*)&infos);
+      |                                    [01;35m[K~~~^~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kpthread_t {aka long unsigned int}[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:202:50:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_t * restrict[m[K’ {aka ‘[01m[Klong unsigned int * restrict[m[K’} but argument is of type ‘[01m[Kpthread_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  202 | extern int pthread_create ([01;36m[Kpthread_t *__restrict __newthread[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kmain.c:101:48:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  101 |                     pthread_create(val[i],NULL,[01;35m[KcalcularXY[m[K,(void*)&infos);
+      |                                                [01;35m[K^~~~~~~~~~[m[K
+      |                                                [01;35m[K|[m[K
+      |                                                [01;35m[Kvoid * (*)(dados *)[m[K
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid * (*)(dados *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[Kmain.c:151:21:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kptrhread_join[m[K’; did you mean ‘[01m[Kpthread_join[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  151 |                     [01;35m[Kptrhread_join[m[K(val[i],NULL);
+      |                     [01;35m[K^~~~~~~~~~~~~[m[K
+      |                     [32m[Kpthread_join[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KcalcularXY[m[K’:
+[01m[Kmain.c:22:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ redeclared as different kind of symbol
+   22 |     dados *[01;31m[Kinfo[m[K = (dados*) info;
+      |            [01;31m[K^~~~[m[K
+[01m[Kmain.c:20:25:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kinfo[m[K’ with type ‘[01m[Kdados *[m[K’
+   20 | void *calcularXY([01;36m[Kdados *info[m[K){
+      |                  [01;36m[K~~~~~~~^~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:101:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kpthread_create[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  101 |                     pthread_create([01;35m[Kval[i][m[K,NULL,calcularXY,(void*)&infos);
+      |                                    [01;35m[K~~~^~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kpthread_t {aka long unsigned int}[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:202:50:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_t * restrict[m[K’ {aka ‘[01m[Klong unsigned int * restrict[m[K’} but argument is of type ‘[01m[Kpthread_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  202 | extern int pthread_create ([01;36m[Kpthread_t *__restrict __newthread[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kmain.c:101:48:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  101 |                     pthread_create(val[i],NULL,[01;35m[KcalcularXY[m[K,(void*)&infos);
+      |                                                [01;35m[K^~~~~~~~~~[m[K
+      |                                                [01;35m[K|[m[K
+      |                                                [01;35m[Kvoid * (*)(dados *)[m[K
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid * (*)(dados *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KcalcularXY[m[K’:
+[01m[Kmain.c:21:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ redeclared as different kind of symbol
+   21 |     dados *[01;31m[Kinfo[m[K = (dados) info;
+      |            [01;31m[K^~~~[m[K
+[01m[Kmain.c:20:25:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kinfo[m[K’ with type ‘[01m[Kdados *[m[K’
+   20 | void *calcularXY([01;36m[Kdados *info[m[K){
+      |                  [01;36m[K~~~~~~~^~~~[m[K
+[01m[Kmain.c:21:5:[m[K [01;31m[Kerror: [m[Kconversion to non-scalar type requested
+   21 |     [01;31m[Kdados[m[K *info = (dados) info;
+      |     [01;31m[K^~~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:98:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kpthread_create[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   98 |                     pthread_create([01;35m[Kval[i][m[K,NULL,calcularXY,(void*)&infos);
+      |                                    [01;35m[K~~~^~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kpthread_t {aka long unsigned int}[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:202:50:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_t * restrict[m[K’ {aka ‘[01m[Klong unsigned int * restrict[m[K’} but argument is of type ‘[01m[Kpthread_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  202 | extern int pthread_create ([01;36m[Kpthread_t *__restrict __newthread[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+[01m[Kmain.c:98:48:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+   98 |                     pthread_create(val[i],NULL,[01;35m[KcalcularXY[m[K,(void*)&infos);
+      |                                                [01;35m[K^~~~~~~~~~[m[K
+      |                                                [01;35m[K|[m[K
+      |                                                [01;35m[Kvoid * (*)(dados *)[m[K
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid * (*)(dados *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KcalcularXY[m[K’:
+[01m[Kmain.c:21:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kinfo[m[K’ redeclared as different kind of symbol
+   21 |     dados *[01;31m[Kinfo[m[K = (dados*) info;
+      |            [01;31m[K^~~~[m[K
+[01m[Kmain.c:20:24:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kinfo[m[K’ with type ‘[01m[Kvoid *[m[K’
+   20 | void *calcularXY([01;36m[Kvoid *info[m[K){
+      |                  [01;36m[K~~~~~~^~~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:98:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kpthread_create[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   98 |                     pthread_create([01;35m[Kval[i][m[K,NULL,calcularXY,(void*)&infos);
+      |                                    [01;35m[K~~~^~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kpthread_t {aka long unsigned int}[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:202:50:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_t * restrict[m[K’ {aka ‘[01m[Klong unsigned int * restrict[m[K’} but argument is of type ‘[01m[Kpthread_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  202 | extern int pthread_create ([01;36m[Kpthread_t *__restrict __newthread[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:98:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kpthread_create[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   98 |                     pthread_create([01;35m[Kval[i][m[K,NULL,calcularXY,(void*)&infos);
+      |                                    [01;35m[K~~~^~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kpthread_t {aka long unsigned int}[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:202:50:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_t * restrict[m[K’ {aka ‘[01m[Klong unsigned int * restrict[m[K’} but argument is of type ‘[01m[Kpthread_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  202 | extern int pthread_create ([01;36m[Kpthread_t *__restrict __newthread[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run] Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:94:39:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[Kpthread_create[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+   94 |                     pthread_create([01;35m[Kval[i][m[K,NULL,calcularXY,(void*)&infos);
+      |                                    [01;35m[K~~~^~~[m[K
+      |                                       [01;35m[K|[m[K
+      |                                       [01;35m[Kpthread_t {aka long unsigned int}[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:202:50:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kpthread_t * restrict[m[K’ {aka ‘[01m[Klong unsigned int * restrict[m[K’} but argument is of type ‘[01m[Kpthread_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’}
+  202 | extern int pthread_create ([01;36m[Kpthread_t *__restrict __newthread[m[K,
+      |                            [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -lm
+./ConjuntoMandelbrot -lm
+make: *** [Makefile:9: run]
