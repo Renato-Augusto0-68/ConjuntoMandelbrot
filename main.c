@@ -52,7 +52,7 @@ void abrirarquivo(int mode, int *valores,int larg, int altura){
     if(arq!=NULL){
         for(int cont=0;cont<altura;cont++){
             for(int cont2=0;cont2<larg;cont2++){
-                fprintf(arq,"%d ",valores[cont*altura+cont2]);
+                fprintf(arq,"%d ",valores[cont*larg+cont2]);
             }
             fprintf(arq,"\n");
         }
@@ -64,7 +64,6 @@ int main(/*int argc, char *argv[]*/){
     
     //if (argc==5)
     
-    int i=0;
     double total=40.0;
     double x1 = -2.0, x2=1.0;
     double y1 = -1.5,y2=1.5; 
@@ -75,7 +74,8 @@ int main(/*int argc, char *argv[]*/){
     int *valores2 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores3 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores4 = (int *) malloc(sizeof(int)*largura*altura);
-    for(int modo=1;i<=4;modo++){
+    for(int modo=1;modo<=4;modo++){
+        dados infos;
         double Z=0.0;
         double x_p =(x2-x1)/largura; 
         double y_p = (y2-y1)/altura;
@@ -92,10 +92,10 @@ int main(/*int argc, char *argv[]*/){
                 pthread_t val[num_threads];
                 for(int i=0;i<num_threads;i++){
                     int valr_i = v_cont*i;
-                    int fim = valr_i + v_cont -1;
+                    int fim = valr_i + v_cont ;
                     infos.inicio=valr_i;
                     infos.fim=fim;
-                    pthread_t v = val[i];
+                    pthread_t v = val[i1];
                     pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos);
                     pthread_join(v,NULL);
                     
@@ -116,7 +116,7 @@ int main(/*int argc, char *argv[]*/){
                             interacoes++;
                         }
                         double valor = ((255.0*interacoes)/total);
-                        valores1[i1*altura + i2] = (int)valor;            
+                        valores1[i1*largura + i2] = (int)valor;            
                     }
             }if(modo==2){
                     for(int i2=0;i2<largura;i2++){
@@ -134,7 +134,7 @@ int main(/*int argc, char *argv[]*/){
                             interacoes++;
                         }
                         double valor = ((255.0*interacoes)/total);
-                        valores2[i1*altura + i2] = (int)valor;            
+                        valores2[i1*largura + i2] = (int)valor;            
                     }  
             }if(modo==3){
                     for(int i2=0;i2<largura;i2++){
@@ -152,7 +152,7 @@ int main(/*int argc, char *argv[]*/){
                             interacoes++;
                         }
                         double valor = ((255.0*interacoes)/total);
-                        valores3[i1*altura + i2] = (int)valor;            
+                        valores3[i1*largura+ i2] = (int)valor;            
                     }     
             }
         }
