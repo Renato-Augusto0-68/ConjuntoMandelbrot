@@ -75,32 +75,38 @@ int main(/*int argc, char *argv[]*/){
     int *valores3 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores4 = (int *) malloc(sizeof(int)*largura*altura);
     for(int modo=1;modo<=4;modo++){
-        dados infos;
         double Z=0.0;
         double x_p =(x2-x1)/largura; 
         double y_p = (y2-y1)/altura;
+        
+        dados infos[num_threads];
+        int v_cont = largura/num_threads;  
+        pthread_t val[num_threads];
         for(int i1=0;i1<altura;i1++){          
-            if(modo==4){
-                dados infos;
-                int v_cont = total/num_threads;
-                infos.x_p=x_p; 
-                infos.total=total;
-                infos.larg = largura;
-                infos.y_p=y_p;
-                infos.i1=i1;
-                infos.storage=valores4;
-                pthread_t val[num_threads];
+            if(modo==4){ 
                 for(int i=0;i<num_threads;i++){
+                    infos[i].x_p=x_p; 
+                    infos[i].total=total;
+                    infos[i].larg = largura;
+                    infos[i].y_p=y_p;
+                    infos[i].i1=i1;
+                    infos[i].storage=valores4;
                     int valr_i = v_cont*i;
-                    int fim = valr_i + v_cont ;
-                    infos.inicio=valr_i;
-                    infos.fim=fim;
-                    pthread_t v = val[i1];
-                    pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos);
-                    pthread_join(v,NULL);
+                    infos[i].inicio=valr_i;                    
+                    if (i==num_threads-1)                   
+                        infos[i].fim=largura;
+                    else
+                        infos[i].fim=(i+1)*v_cont;
+                    pthread_t v = val[i];
+                    pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos[i]);
+                    //pthread_join(v,NULL);
                     
                 }  
-                
+                for(int i=0;i<num_threads;i++){
+                    pthread_t v = val[i];
+                    pthread_join(v,NULL);
+                }
+                 
             }    
             if(modo==1){
                 for(int i2=0;i2<largura;i2++){
