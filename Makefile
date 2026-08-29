@@ -9,7 +9,7 @@ run : ConjuntoMandelbrot
 			./ConjuntoMandelbrot fopenmp -lpthread -lm
 
 clean : 
-		rm -f *.o a.out *.pgm ConjuntoMandelbrot
+		rm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
 
 
 .PHONY: run clean

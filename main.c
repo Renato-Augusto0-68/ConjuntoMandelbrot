@@ -37,7 +37,25 @@ void *calcularXY_pthrd(void *arg){
     }  
 }
 
-void abrirarquivo(int mode, int *valores,int larg, int altura){
+void abrirTempo(long double *tempo){
+    FILE *arq;
+    arq=fopen("times.txt","w"); 
+    if(arq!=NULL){
+            for(int i=0;i<4;i++){
+                if(i==0)
+                    fprintf(arq,"Serial: %Lf\n",tempo[i]);
+                if (i==1)
+                    fprintf(arq,"OpenMP: %Lf\n",tempo[i]);
+                if (i ==2)
+                    fprintf(arq,"Pthreads1: %Lf\n",tempo[i]);
+                if (i==3)
+                    fprintf(arq,"Pthreads2: %Lf\n",tempo[i]);
+            }
+    }
+    fclose(arq);
+}
+
+void abrirArquivo(int mode, int *valores,int larg, int altura){
     FILE *arq;
     if (mode==1)
         arq = fopen("mandelbrot_rass_serial.pgm","w");
@@ -47,31 +65,13 @@ void abrirarquivo(int mode, int *valores,int larg, int altura){
         arq = fopen("mandelbrot_rass_pthreads1.pgm","w");
     if (mode==4)
         arq=fopen("mandelbrot_rass_pthreads2.pgm","w");
-    if(mode==5){
-        arq=fopen("times.txt","w");
-    }
 
-    if (mode!=5){
-        if(arq!=NULL){
+    if(arq!=NULL){
             for(int cont=0;cont<altura;cont++){
                 for(int cont2=0;cont2<larg;cont2++){
                     fprintf(arq,"%d ",valores[cont*larg+cont2]);
                 }
-                fprintf(arq,"\n");
-            }
-        }
-    }else{
-        if(arq!=NULL){
-            for(int i=0;i<4;i++){
-                if(i==0)
-                    fprintf(arq,"Serial: %f\n",valores[i]);
-                if (i==1)
-                    fprintf(arq,"OpenMP: %f\n",valores[i]);
-                if (i ==2)
-                    fprintf(arq,"Pthreads1: %f\n",valores[i]);
-                if (i==3)
-                    fprintf(arq,"Pthreads2: %f\n",valores[i]);
-            }
+            fprintf(arq,"\n");
         }
     }
     fclose(arq);
@@ -88,7 +88,7 @@ int main(/*int argc, char *argv[]*/){
     int num_threads=4;
     int largura =10;
     clock_t  start_time,end_time;
-    clock_t tempos[4];
+    long double tempos[4];
     
     int altura =6;  
     int *valores1 = (int *) malloc(sizeof(int)*largura*altura);
@@ -203,20 +203,16 @@ int main(/*int argc, char *argv[]*/){
         }
         tempos[modo-1]=(double)(end_time-start_time)/CLOCKS_PER_SEC;
         if (modo==1)
-            abrirarquivo(modo,valores1,largura,altura);
+            abrirArquivo(modo,valores1,largura,altura);
         if (modo==2)
-            abrirarquivo(modo,valores2,largura,altura);
+            abrirArquivo(modo,valores2,largura,altura);
         if (modo==3)
-            abrirarquivo(modo,valores3,largura,altura);
+            abrirArquivo(modo,valores3,largura,altura);
         if (modo==4)
-            abrirarquivo(modo,valores4,largura,altura);
+            abrirArquivo(modo,valores4,largura,altura);
         }
     }
-
-    
-    
-    abrirarquivo(TIME_WRITE,)
-
+    abrirTempo(tempos);
 
     free(valores1);
     free(valores4);

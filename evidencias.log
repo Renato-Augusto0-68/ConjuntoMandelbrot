@@ -1186,4 +1186,195 @@ gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
 ./ConjuntoMandelbrot fopenmp -lpthread -lm
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
 [?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
-[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K[A[K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/C
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K[A[K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K[A[K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KabrirTempo[m[K’:
+[01m[Kmain.c:46:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |                     fprintf(arq,"Serial: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                           [01;35m[K|[m[K         [32m[K|[m[K
+      |                                           [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                          [32m[K%ld[m[K
+[01m[Kmain.c:48:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |                     fprintf(arq,"OpenMP: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                           [01;35m[K|[m[K         [32m[K|[m[K
+      |                                           [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                          [32m[K%ld[m[K
+[01m[Kmain.c:50:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |                     fprintf(arq,"Pthreads1: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                              [01;35m[K|[m[K         [32m[K|[m[K
+      |                                              [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                             [32m[K%ld[m[K
+[01m[Kmain.c:52:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   52 |                     fprintf(arq,"Pthreads2: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                              [01;35m[K|[m[K         [32m[K|[m[K
+      |                                              [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                             [32m[K%ld[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:206:13:[m[K [01;35m[Kwarning: [m[Kimplicit declaration of function ‘[01m[Kabrirarquivo[m[K’; did you mean ‘[01m[KabrirArquivo[m[K’? [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wimplicit-function-declaration-Wimplicit-function-declaration]8;;[m[K]
+  206 |             [01;35m[Kabrirarquivo[m[K(modo,valores1,largura,altura);
+      |             [01;35m[K^~~~~~~~~~~~[m[K
+      |             [32m[KabrirArquivo[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+/usr/bin/ld: main.o: in function `main':
+main.c:(.text+0xf2c): undefined reference to `abrirarquivo'
+/usr/bin/ld: main.c:(.text+0xf5a): undefined reference to `abrirarquivo'
+/usr/bin/ld: main.c:(.text+0xf88): undefined reference to `abrirarquivo'
+/usr/bin/ld: main.c:(.text+0xfb6): undefined reference to `abrirarquivo'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:2: ConjuntoMandelbrot] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ m[Kmake clean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prunclean[K[K[K[K[K[K
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KabrirTempo[m[K’:
+[01m[Kmain.c:46:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |                     fprintf(arq,"Serial: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                           [01;35m[K|[m[K         [32m[K|[m[K
+      |                                           [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                          [32m[K%ld[m[K
+[01m[Kmain.c:48:43:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |                     fprintf(arq,"OpenMP: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                           [01;35m[K|[m[K         [32m[K|[m[K
+      |                                           [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                          [32m[K%ld[m[K
+[01m[Kmain.c:50:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |                     fprintf(arq,"Pthreads1: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                              [01;35m[K|[m[K         [32m[K|[m[K
+      |                                              [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                             [32m[K%ld[m[K
+[01m[Kmain.c:52:46:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Kclock_t[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   52 |                     fprintf(arq,"Pthreads2: [01;35m[K%f[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                              [01;35m[K|[m[K         [32m[K|[m[K
+      |                                              [01;35m[Kdouble[m[K    [32m[Kclock_t {aka long int}[m[K
+      |                                             [32m[K%ld[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make cleanclea[K[K[K[K[Kn
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[K clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KabrirTempo[m[K’:
+[01m[Kmain.c:46:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |                     fprintf(arq,"Serial: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K         [32m[K|[m[K
+      |                                            [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                          [32m[K%Lf[m[K
+[01m[Kmain.c:48:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |                     fprintf(arq,"OpenMP: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K         [32m[K|[m[K
+      |                                            [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                          [32m[K%Lf[m[K
+[01m[Kmain.c:50:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |                     fprintf(arq,"Pthreads1: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                               [01;35m[K|[m[K         [32m[K|[m[K
+      |                                               [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                             [32m[K%Lf[m[K
+[01m[Kmain.c:52:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   52 |                     fprintf(arq,"Pthreads2: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                               [01;35m[K|[m[K         [32m[K|[m[K
+      |                                               [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                             [32m[K%Lf[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KabrirTempo[m[K’:
+[01m[Kmain.c:46:45:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |                     fprintf(arq,"Serial: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                             [01;35m[K^[m[K
+[01m[Kmain.c:48:45:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |                     fprintf(arq,"OpenMP: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                             [01;35m[K^[m[K
+[01m[Kmain.c:50:48:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |                     fprintf(arq,"Pthreads1: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                                [01;35m[K^[m[K
+[01m[Kmain.c:52:48:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   52 |                     fprintf(arq,"Pthreads2: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                                [01;35m[K^[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KabrirTempo[m[K’:
+[01m[Kmain.c:46:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |                     fprintf(arq,"Serial: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K         [32m[K|[m[K
+      |                                            [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                          [32m[K%Lf[m[K
+[01m[Kmain.c:48:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |                     fprintf(arq,"OpenMP: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K         [32m[K|[m[K
+      |                                            [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                          [32m[K%Lf[m[K
+[01m[Kmain.c:50:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |                     fprintf(arq,"Pthreads1: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                               [01;35m[K|[m[K         [32m[K|[m[K
+      |                                               [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                             [32m[K%Lf[m[K
+[01m[Kmain.c:52:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   52 |                     fprintf(arq,"Pthreads2: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                               [01;35m[K|[m[K         [32m[K|[m[K
+      |                                               [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                             [32m[K%Lf[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KabrirTempo[m[K’:
+[01m[Kmain.c:46:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |                     fprintf(arq,"Serial: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K         [32m[K|[m[K
+      |                                            [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                          [32m[K%Lf[m[K
+[01m[Kmain.c:48:44:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |                     fprintf(arq,"OpenMP: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                          [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K         [32m[K|[m[K
+      |                                            [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                          [32m[K%Lf[m[K
+[01m[Kmain.c:50:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |                     fprintf(arq,"Pthreads1: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                               [01;35m[K|[m[K         [32m[K|[m[K
+      |                                               [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                             [32m[K%Lf[m[K
+[01m[Kmain.c:52:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   52 |                     fprintf(arq,"Pthreads2: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
+      |                                             [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
+      |                                               [01;35m[K|[m[K         [32m[K|
