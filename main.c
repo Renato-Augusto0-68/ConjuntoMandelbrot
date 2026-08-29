@@ -18,7 +18,7 @@ typedef struct dados{
 
 
 
-void *calcularXY_pthrd(void *arg){
+void *calcularXYPthrd(void *arg){
     dados *info = (dados *)arg;
     for(int i2=(info->inicio);i2<info->fim;i2++){
         double x=0.0;
@@ -131,7 +131,7 @@ int main(int argc, char *argv[]){
                     else
                         infos[i].fim=(i+1)*v_cont;
                     pthread_t v = val[i];
-                    pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos[i]);
+                    pthread_create(&v,NULL,calcularXYPthrd,(void*)&infos[i]);
                     
                 }  
                 for(int i=0;i<num_threads;i++){
@@ -202,7 +202,7 @@ int main(int argc, char *argv[]){
                         else
                             infos[i].fim=(i+1)*v_cont;
                         pthread_t v = val[i];
-                        pthread_create(&v,NULL,calcularXY_pthrd,(void*)&infos[i]);
+                        pthread_create(&v,NULL,calcularXYPthrd,(void*)&infos[i]);
                     
                     }  
                     for(int i=0;i<valor;i++){
