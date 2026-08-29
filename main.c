@@ -3,7 +3,8 @@
 #include <math.h>
 #include <pthread.h>
 #include <time.h>
-#define TIME_WRITE 5
+#include <string.h>
+
 typedef struct dados{
     double x_p; 
     int larg;
@@ -78,19 +79,19 @@ void abrirArquivo(int mode, int *valores,int larg, int altura){
 
 }   
 
-int main(/*int argc, char *argv[]*/){
+int main(int argc, char *argv[]){
     
-    //if (argc==5)
     
-    double total=40.0;
+    if (strcmp(argv[1],"mandelbrot")==0 && argc==6){
+    int largura = atoi(argv[2]);
+    int altura = atoi(argv[3]);
+    int num_threads = atoi(argv[5]);
+    double total = atoi(argv[4]);
     double x1 = -2.0, x2=1.0;
     double y1 = -1.5,y2=1.5; 
-    int num_threads=4;
-    int largura =10;
     clock_t  start_time,end_time;
     long double tempos[4];
     
-    int altura =6;  
     int *valores1 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores2 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores3 = (int *) malloc(sizeof(int)*largura*altura);
@@ -218,5 +219,8 @@ int main(/*int argc, char *argv[]*/){
     free(valores4);
     free(valores2);
     free(valores3);
+
+    
+    }   
     return 0;
 }

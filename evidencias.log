@@ -1377,4 +1377,78 @@ gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
 [01m[Kmain.c:52:47:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%lf[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 3 has type ‘[01m[Klong double[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
    52 |                     fprintf(arq,"Pthreads2: [01;35m[K%lf[m[K\n",[32m[Ktempo[i][m[K);
       |                                             [01;35m[K~~^[m[K    [32m[K~~~~~~~~[m[K
-      |                                               [01;35m[K|[m[K         [32m[K|
+      |                                               [01;35m[K|[m[K         [32m[K|[m[K
+      |                                               [01;35m[Kdouble[m[K    [32m[Klong double[m[K
+      |                                             [32m[K%Lf[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KabrirTempo[m[K’:
+[01m[Kmain.c:46:45:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   46 |                     fprintf(arq,"Serial: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                             [01;35m[K^[m[K
+[01m[Kmain.c:48:45:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   48 |                     fprintf(arq,"OpenMP: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                             [01;35m[K^[m[K
+[01m[Kmain.c:50:48:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   50 |                     fprintf(arq,"Pthreads1: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                                [01;35m[K^[m[K
+[01m[Kmain.c:52:48:[m[K [01;35m[Kwarning: [m[Kuse of ‘[01m[Kll[m[K’ length modifier with ‘[01m[Kf[m[K’ type character has either no effect or undefined behavior [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+   52 |                     fprintf(arq,"Pthreads2: %ll[01;35m[Kf[m[K\n",tempo[i]);
+      |                                                [01;35m[K^[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean[2Prun
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make runclean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean][K[K[K[K[K[K[K
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:90:12:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Ktotal[m[K’; have ‘[01m[Kdouble[m[K’
+   90 |     double [01;31m[Ktotal[m[K=40.0;
+      |            [01;31m[K^~~~~[m[K
+[01m[Kmain.c:89:9:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Ktotal[m[K’ with type ‘[01m[Kint[m[K’
+   89 |     int [01;36m[Ktotal[m[K = atoi(argv[3]);
+      |         [01;36m[K^~~~~[m[K
+[01m[Kmain.c:96:9:[m[K [01;31m[Kerror: [m[Kredefinition of ‘[01m[Kaltura[m[K’
+   96 |     int [01;31m[Kaltura[m[K =6;
+      |         [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:87:9:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kaltura[m[K’ with type ‘[01m[Kint[m[K’
+   87 |     int [01;36m[Kaltura[m[K = atoi(argv[2]);
+      |         [01;36m[K^~~~~~[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:90:12:[m[K [01;31m[Kerror: [m[Kconflicting types for ‘[01m[Ktotal[m[K’; have ‘[01m[Kdouble[m[K’
+   90 |     double [01;31m[Ktotal[m[K=40.0;
+      |            [01;31m[K^~~~~[m[K
+[01m[Kmain.c:89:9:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Ktotal[m[K’ with type ‘[01m[Kint[m[K’
+   89 |     int [01;36m[Ktotal[m[K = atoi(argv[3]);
+      |         [01;36m[K^~~~~[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ [KConkunto[K[K[K[K[KjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4[1P[1@ 
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4make[K clean[2Prun
+[?2004l./ConjuntoMandelbrot mandelbrot 10 6 40 4 fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run./ConjuntoMandelbrot mandelbrot 10 6 40 4make run[K
+[?2004l./ConjuntoMandelbrot fopenmp -lpthread -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./conjun[K[K[K[K[KC[K[KConjuntoMAndelbrot[1Pndelbrotandelbrot[C[C[C[C[C[C[C[C mandelbrot 10 6 5 [K[K40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4[1P[1P[1P[1P[1P[1P[1P[1P
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
