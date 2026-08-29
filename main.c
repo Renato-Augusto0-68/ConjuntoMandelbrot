@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include <math.h>
 #include <pthread.h>
-
-//Teste de mandelbrot na raça
-
+#include <time.h>
+#define TIME_WRITE 5
 typedef struct dados{
     double x_p; 
     int larg;
@@ -48,16 +47,35 @@ void abrirarquivo(int mode, int *valores,int larg, int altura){
         arq = fopen("mandelbrot_rass_pthreads1.pgm","w");
     if (mode==4)
         arq=fopen("mandelbrot_rass_pthreads2.pgm","w");
-    
-    if(arq!=NULL){
-        for(int cont=0;cont<altura;cont++){
-            for(int cont2=0;cont2<larg;cont2++){
-                fprintf(arq,"%d ",valores[cont*larg+cont2]);
+    if(mode==5){
+        arq=fopen("times.txt","w");
+    }
+
+    if (mode!=5){
+        if(arq!=NULL){
+            for(int cont=0;cont<altura;cont++){
+                for(int cont2=0;cont2<larg;cont2++){
+                    fprintf(arq,"%d ",valores[cont*larg+cont2]);
+                }
+                fprintf(arq,"\n");
             }
-            fprintf(arq,"\n");
+        }
+    }else{
+        if(arq!=NULL){
+            for(int i=0;i<4;i++){
+                if(i==0)
+                    fprintf(arq,"Serial: %f\n",valores[i]);
+                if (i==1)
+                    fprintf(arq,"OpenMP: %f\n",valores[i]);
+                if (i ==2)
+                    fprintf(arq,"Pthreads1: %f\n",valores[i]);
+                if (i==3)
+                    fprintf(arq,"Pthreads2: %f\n",valores[i]);
+            }
         }
     }
     fclose(arq);
+
 }   
 
 int main(/*int argc, char *argv[]*/){
@@ -69,6 +87,9 @@ int main(/*int argc, char *argv[]*/){
     double y1 = -1.5,y2=1.5; 
     int num_threads=4;
     int largura =10;
+    clock_t  start_time,end_time;
+    clock_t tempos[4];
+    
     int altura =6;  
     int *valores1 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores2 = (int *) malloc(sizeof(int)*largura*altura);
@@ -84,6 +105,7 @@ int main(/*int argc, char *argv[]*/){
         pthread_t val[num_threads];
         for(int i1=0;i1<altura;i1++){          
             if(modo==4){ 
+                start_time=clock();
                 for(int i=0;i<num_threads;i++){
                     infos[i].x_p=x_p; 
                     infos[i].total=total;
@@ -105,9 +127,10 @@ int main(/*int argc, char *argv[]*/){
                     pthread_t v = val[i];
                     pthread_join(v,NULL);
                 }
-                 
+                end_time=clock();
             }    
             if(modo==1){
+                start_time=clock();
                 for(int i2=0;i2<largura;i2++){
                     double x=0.0;
                     double y=0.0;
@@ -123,7 +146,9 @@ int main(/*int argc, char *argv[]*/){
                         double valor = ((255.0*interacoes)/total);
                         valores1[i1*largura + i2] = (int)valor;            
                     }
+                end_time=clock();                    
             }if(modo==2){
+                start_time=clock();
                 #pragma omp parallel num_threads(num_threads)
                 {
                     #pragma omp parallel for    
@@ -144,8 +169,10 @@ int main(/*int argc, char *argv[]*/){
                         double valor = ((255.0*interacoes)/total);
                         valores2[i1*largura + i2] = (int)valor;            
                         }
-                    }  
+                    } 
+                    end_time=clock(); 
             }if(modo==3){
+                start_time=clock();
                 int valor = num_threads/2;
                 #pragma omp parallel num_threads(valor)
                 { 
@@ -172,7 +199,9 @@ int main(/*int argc, char *argv[]*/){
                         pthread_join(v,NULL);
                     }
             }
+            end_time=clock();
         }
+        tempos[modo-1]=(double)(end_time-start_time)/CLOCKS_PER_SEC;
         if (modo==1)
             abrirarquivo(modo,valores1,largura,altura);
         if (modo==2)
@@ -181,8 +210,14 @@ int main(/*int argc, char *argv[]*/){
             abrirarquivo(modo,valores3,largura,altura);
         if (modo==4)
             abrirarquivo(modo,valores4,largura,altura);
-     }
+        }
     }
+
+    
+    
+    abrirarquivo(TIME_WRITE,)
+
+
     free(valores1);
     free(valores4);
     free(valores2);
