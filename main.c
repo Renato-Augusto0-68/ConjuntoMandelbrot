@@ -28,7 +28,7 @@ void *calcularXYPthrd(void *arg){
         double interacoes =0.0;
                 
         while(((x*x)+(y*y))<=4.0 && interacoes<(info->total)){
-                double x_temp = (x*x) - (y*y) + c_real; 
+                double x_temp = (x*x) -  (y*y) + c_real; 
                 y= 2*x*y +(c_imag);
                 x= x_temp;
                 interacoes++;
@@ -184,33 +184,12 @@ int main(int argc, char *argv[]){
                     end_time=clock(); 
             }if(modo==3){
                 start_time=clock();
-                int valor = num_threads/2;
-                #pragma omp parallel num_threads(valor)
-                { 
-                    #pragma omp parallel for
-                    for(int i=0;i<valor;i++){
-                        infos[i].x_p=x_p; 
-                        infos[i].total=total;
-                        infos[i].larg = largura;
-                        infos[i].y_p=y_p;
-                        infos[i].i1=i1;
-                        infos[i].storage=valores3;
-                        int valr_i = v_cont*i;
-                        infos[i].inicio=valr_i;                    
-                        if (i==valor-1)                   
-                            infos[i].fim=largura;
-                        else
-                            infos[i].fim=(i+1)*v_cont;
-                        pthread_t v = val[i];
-                        pthread_create(&v,NULL,calcularXYPthrd,(void*)&infos[i]);
-                    
-                    }  
-                    for(int i=0;i<valor;i++){
-                        pthread_t v = val[i];
-                        pthread_join(v,NULL);
-                    }
-            }
-            end_time=clock();
+                
+
+
+
+                
+                end_time=clock();
         }
         tempos[modo-1]=(double)(end_time-start_time)/CLOCKS_PER_SEC;
         if (modo==1)
