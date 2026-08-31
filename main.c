@@ -103,7 +103,6 @@ void abrirArquivo(int mode, int *valores,int larg, int altura){
 
 int main(int argc, char *argv[]){
     if(argc<6){
-        printf("Argumentos insuficientes, encerrando");
         return -1;
     }
 
@@ -111,13 +110,11 @@ int main(int argc, char *argv[]){
     int largura = atoi(argv[2]);
     int altura = atoi(argv[3]);
     if(largura<=0 || altura<=0){
-        printf("Encerrando");
         return -1;
     }
     int num_threads = atoi(argv[5]);
     double total = atoi(argv[4]);
     if(total<=0.0 || num_threads<=0){
-        printf("Encerrando");
         return -1;
     }
     double x1 = -2.0, x2=1.0;
