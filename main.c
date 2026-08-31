@@ -12,10 +12,30 @@ typedef struct dados{
     double y_p;
     int i1;
     int inicio;
+    pthread_t val;
     int fim;
     int *storage;
 }dados;
 
+void *calcularNovo(void *arg){
+    dados *info = (dados *)arg;
+    for(int i2=(info->val);i2<(info->fim);i2+=(info->inicio)){
+        double x=0.0;
+        double y=0.0;
+        double c_real = -2.0+i2*(info->x_p);
+        double c_imag = -1.5+(info->i1)*(info->y_p);
+        double interacoes =0.0;
+                
+        while(((x*x)+(y*y))<=4.0 && interacoes<(info->total)){
+                double x_temp = (x*x) - (y*y) + c_real; 
+                y= 2*x*y +(c_imag);
+                x= x_temp;
+                interacoes++;
+        }
+        double valor = ((255.0*interacoes)/info->total);
+        info->storage[(info->i1)*(info->larg) + i2] = (int)valor;            
+    }  
+}
 
 
 void *calcularXYPthrd(void *arg){
@@ -84,6 +104,7 @@ int main(int argc, char *argv[]){
         printf("Argumentos insuficientes, encerrando");
         return -1;
     }
+
     if (strcmp(argv[1],"mandelbrot")==0 && argc==6){
     int largura = atoi(argv[2]);
     int altura = atoi(argv[3]);
@@ -111,11 +132,14 @@ int main(int argc, char *argv[]){
         double x_p =(x2-x1)/largura; 
         double y_p = (y2-y1)/altura;
         dados infos[num_threads];
-        dados infos3[num_threads/2];
+        dados infos3[num_threads];
         int v_cont = largura/num_threads;  
         pthread_t val[num_threads];
+        //pthread_t val3[num_threads];
+
         for(int i1=0;i1<altura;i1++){          
             if(modo==4){ 
+            
                 start_time=clock();
                 for(int i=0;i<num_threads;i++){
                     infos[i].x_p=x_p; 
@@ -183,12 +207,27 @@ int main(int argc, char *argv[]){
                     } 
                     end_time=clock(); 
             }if(modo==3){
+
                 start_time=clock();
-                
+                for(int i=0;i<num_threads;i++){
+                    infos3[i].x_p=x_p; 
+                    infos3[i].total=total;
+                    infos3[i].larg = largura;
+                    infos3[i].y_p=y_p;
+                    infos3[i].i1=i1;
+                    infos3[i].storage=valores3;
+                    infos3[i].val=pthread_self();
 
+                    infos3[i].inicio=num_threads;                    
+                    infos3[i].fim=altura;
+                    pthread_t v = val[i];
+                    pthread_create(&v,NULL,calcularNovo,(void*)&infos3[i]);
+                }
+                for(int i=0;i<num_threads;i++){
+                    pthread_t v = val[i];
+                    pthread_join(v,NULL);
+                }
 
-
-                
                 end_time=clock();
         }
         tempos[modo-1]=(double)(end_time-start_time)/CLOCKS_PER_SEC;
