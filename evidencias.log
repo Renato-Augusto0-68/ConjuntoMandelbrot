@@ -1559,4 +1559,479 @@ make: *** [Makefile:5: main.o] Error 1
 gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
 Segmentation fault (core dumped)
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
-[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbro
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:136:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kint[m[K’
+  136 |         [01;31m[Kint[m[K v_cont = largura/num_threads;
+      |         [01;31m[K^~~[m[K
+[01m[Kmain.c:151:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kv_cont[m[K’ undeclared (first use in this function)
+  151 |                     int valr_i = [01;31m[Kv_cont[m[K*i;
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:151:34:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:136:9:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kint[m[K’
+  136 |         [01;31m[Kint[m[K v_cont = largura/num_threads;
+      |         [01;31m[K^~~[m[K
+[01m[Kmain.c:151:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kv_cont[m[K’ undeclared (first use in this function)
+  151 |                     int valr_i = [01;31m[Kv_cont[m[K*i;
+      |                                  [01;31m[K^~~~~~[m[K
+[01m[Kmain.c:151:34:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+^[[ASegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+^[[ASegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+^[[ASegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+^[[A
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+^[[ASegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4[Kmake && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+^[[ASegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4[K4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+^[[ASegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+^[[A[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4[C[C[1P[1P[1P[1P[1P[1P[1P[1P
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean./ConjuntoMandelbrot mandelbrot 10 6 40 4[8@make && [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ 
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4[8@make && [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+munmap_chunk(): invalid pointer
+Aborted (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+munmap_chunk(): invalid pointer
+Aborted (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+munmap_chunk(): invalid pointer
+Aborted (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+munmap_chunk(): invalid pointer
+Aborted (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+munmap_chunk(): invalid pointer
+Aborted (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean

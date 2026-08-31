@@ -12,7 +12,7 @@ typedef struct dados{
     double y_p;
     int i1;
     int inicio;
-    pthread_t val;
+    int val;
     int fim;
     int *storage;
 }dados;
@@ -20,21 +20,23 @@ typedef struct dados{
 void *calcularNovo(void *arg){
     dados *info = (dados *)arg;
     for(int i2=(info->val);i2<(info->fim);i2+=(info->inicio)){
-        double x=0.0;
-        double y=0.0;
-        double c_real = -2.0+i2*(info->x_p);
-        double c_imag = -1.5+(info->i1)*(info->y_p);
-        double interacoes =0.0;
+        for(int i3=0;i3<info->larg;i3++){
+            double x=0.0;
+            double y=0.0;
+            double c_real = -2.0+i3*(info->x_p);
+            double c_imag = -1.5+(i2)*(info->y_p);
+            double interacoes =0.0;
                 
-        while(((x*x)+(y*y))<=4.0 && interacoes<(info->total)){
+            while(((x*x)+(y*y))<=4.0 && interacoes<(info->total)){
                 double x_temp = (x*x) - (y*y) + c_real; 
                 y= 2*x*y +(c_imag);
                 x= x_temp;
                 interacoes++;
-        }
-        double valor = ((255.0*interacoes)/info->total);
-        info->storage[(info->i1)*(info->larg) + i2] = (int)valor;            
-    }  
+            }
+            double valor = ((255.0*interacoes)/info->total);
+            info->storage[(i2)*(info->larg) + i3] = (int)valor;            
+        }  
+    }
 }
 
 
@@ -216,16 +218,16 @@ int main(int argc, char *argv[]){
                     infos3[i].y_p=y_p;
                     infos3[i].i1=i1;
                     infos3[i].storage=valores3;
-                    infos3[i].val=pthread_self();
+                    infos3[i].val=i;
 
                     infos3[i].inicio=num_threads;                    
                     infos3[i].fim=altura;
                     pthread_t v = val[i];
-                    pthread_create(&v,NULL,calcularNovo,(void*)&infos3[i]);
+                    pthread_create(&val[i],NULL,calcularNovo,(void*)&infos3[i]);
                 }
                 for(int i=0;i<num_threads;i++){
                     pthread_t v = val[i];
-                    pthread_join(v,NULL);
+                    pthread_join(val[i],NULL);
                 }
 
                 end_time=clock();
