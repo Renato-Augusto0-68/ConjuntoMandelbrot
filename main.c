@@ -17,12 +17,19 @@ typedef struct dados{
     int *storage;
 }dados;
 
+typedef struct dados3{
+    int larg;
+    int alt;
+    int *storage;
+}dados3;
 
-
-int *alocarVetor(void *args){
-
-
-
+void *limparVetor(void *arg){
+    dados3* info = (dados3*)arg;
+    int l=(info->larg);
+    int a = (info->alt);
+    for(int i=0;i<(l*a);i++){
+        info->storage[i]=0;
+    }
 }
 
 
@@ -133,17 +140,17 @@ int main(int argc, char *argv[]){
     
     int *valores1 = (int *) malloc(sizeof(int)*largura*altura);
     int *valores2 = (int *) malloc(sizeof(int)*largura*altura);
-    int *valores3 = (int *) malloc(sizeof(int)*largura*altura);
+    int *valores3 =  (int *) malloc(sizeof(int)*largura*altura);
     int *valores4 = (int *) malloc(sizeof(int)*largura*altura);
     for(int modo=1;modo<=4;modo++){
         double Z=0.0;
         double x_p =(x2-x1)/largura; 
         double y_p = (y2-y1)/altura;
         dados infos[num_threads];
-        dados infos3[num_threads];
+        //dados infos3[num_threads];
         int v_cont = largura/num_threads;  
         pthread_t val[num_threads];
-        //pthread_t val3[num_threads];
+        pthread_t val3[num_threads];
 
         for(int i1=0;i1<altura;i1++){          
             if(modo==4){ 
@@ -216,10 +223,19 @@ int main(int argc, char *argv[]){
                     } 
                     end_time=clock(); 
             }if(modo==3){
-
                 start_time=clock();
-                
+                dados3 valor[num_threads];
                 for(int i=0;i<num_threads;i++){
+                    valor[i].storage = valores3;
+                    valor[i].alt=altura;
+                    valor[i].larg=largura;
+                    pthread_create(&val3[i],NULL,limparVetor,(void*)&valor[i]);
+                }
+                for(int i=0;i<num_threads;i++){
+                    pthread_join(val3[i],NULL);
+                }
+
+                /*for(int i=0;i<num_threads;i++){
                     infos3[i].x_p=x_p; 
                     infos3[i].total=total;
                     infos3[i].larg = largura;
@@ -237,7 +253,7 @@ int main(int argc, char *argv[]){
                     pthread_t v = val[i];
                     pthread_join(val[i],NULL);
                 }
-
+                */
                 for(int i2=0;i2<largura;i2++){
                     double x=0.0;
                     double y=0.0;
@@ -253,9 +269,6 @@ int main(int argc, char *argv[]){
                         double valor = ((255.0*interacoes)/total);
                         valores3[i1*largura + i2] = (int)valor;            
                     }
-
-
-
 
                 end_time=clock();
         }

@@ -2034,4 +2034,208 @@ gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
 gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
 [?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
 [?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
-[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make cleanScript started on 2026-09-02 11:22:52-03:00 [TERM="xterm-256color" TTY="/dev/pts/4" COLUMNS="159" LINES="12"]
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[KalocarVetor[m[K’:
+[01m[Kmain.c:23:11:[m[K [01;31m[Kerror: [m[K‘[01m[Kval[m[K’ redeclared as different kind of symbol
+   23 |     int **[01;31m[Kval[m[K = (int**) malloc(larg*sizeof(int*));
+      |           [01;31m[K^~~[m[K
+[01m[Kmain.c:22:24:[m[K [01;36m[Knote: [m[Kprevious definition of ‘[01m[Kval[m[K’ with type ‘[01m[Kint *[m[K’
+   22 | int **alocarVetor([01;36m[Kint *val[m[K, int larg, int alt){
+      |                   [01;36m[K~~~~~^~~[m[K
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:224:38:[m[K [01;35m[Kwarning: [m[Kpassing argument 1 of ‘[01m[KalocarVetor[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  224 |                 valores3=alocarVetor([01;35m[Kvalores3[m[K,largura,altura);
+      |                                      [01;35m[K^~~~~~~~[m[K
+      |                                      [01;35m[K|[m[K
+      |                                      [01;35m[Kint **[m[K
+[01m[Kmain.c:22:24:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kint *[m[K’ but argument is of type ‘[01m[Kint **[m[K’
+   22 | int **alocarVetor([01;36m[Kint *val[m[K, int larg, int alt){
+      |                   [01;36m[K~~~~~^~~[m[K
+[01m[Kmain.c:260:51:[m[K [01;35m[Kwarning: [m[Kassignment to ‘[01m[Kint *[m[K’ from ‘[01m[Kint[m[K’ makes pointer from integer without a cast [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wint-conversion-Wint-conversion]8;;[m[K]
+  260 |                         valores3[i1*largura + i2] [01;35m[K=[m[K (int)valor;
+      |                                                   [01;35m[K^[m[K
+[01m[Kmain.c:274:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalores3[m[K’ undeclared (first use in this function); did you mean ‘[01m[Kvalores4[m[K’?
+  274 |             abrirArquivo(modo,[01;31m[Kvalores3[m[K,largura,altura);
+      |                               [01;31m[K^~~~~~~~[m[K
+      |                               [32m[Kvalores4[m[K
+[01m[Kmain.c:274:31:[m[K [01;36m[Knote: [m[Keach undeclared identifier is reported only once for each function it appears in
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ [K]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make ^C[?2004l[?2004h[?2004l
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ 
+[?2004l[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make run[K[K[K&& ./Conk[KjuntoMandelbrot mandelbrot 10 6 40[K0 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:231:50:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  231 |                     pthread_create(&val3[i],NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                                  [01;35m[K^~~~~~~~~~~[m[K
+      |                                                  [01;35m[K|[m[K
+      |                                                  [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ m[Kmake clean
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:231:50:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  231 |                     pthread_create(&val3[i],NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                                  [01;35m[K^~~~~~~~~~~[m[K
+      |                                                  [01;35m[K|[m[K
+      |                                                  [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./conju[K[K[K[K[KConjuntoMandelbrot mandelbrot 10 6 404[K 4
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4[8@make && [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:231:49:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  231 |                     pthread_create(&val[i],NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                                 [01;35m[K^~~~~~~~~~~[m[K
+      |                                                 [01;35m[K|[m[K
+      |                                                 [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4[8P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8@make && [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:231:49:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  231 |                     pthread_create(&val[i],NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                                 [01;35m[K^~~~~~~~~~~[m[K
+      |                                                 [01;35m[K|[m[K
+      |                                                 [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:232:44:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  232 |                     pthread_create(&v,NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                            [01;35m[K^~~~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K
+      |                                            [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:232:44:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  232 |                     pthread_create(&v,NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                            [01;35m[K^~~~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K
+      |                                            [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:232:44:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  232 |                     pthread_create(&v,NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                            [01;35m[K^~~~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K
+      |                                            [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:232:44:[m[K [01;35m[Kwarning: [m[Kpassing argument 3 of ‘[01m[Kpthread_create[m[K’ from incompatible pointer type [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wincompatible-pointer-types-Wincompatible-pointer-types]8;;[m[K]
+  232 |                     pthread_create(&v,NULL,[01;35m[KalocarVetor[m[K,(void*)&valor[i]);
+      |                                            [01;35m[K^~~~~~~~~~~[m[K
+      |                                            [01;35m[K|[m[K
+      |                                            [01;35m[Kvoid (*)(void *)[m[K
+In file included from [01m[Kmain.c:4[m[K:
+[01m[K/usr/include/pthread.h:204:36:[m[K [01;36m[Knote: [m[Kexpected ‘[01m[Kvoid * (*)(void *)[m[K’ but argument is of type ‘[01m[Kvoid (*)(void *)[m[K’
+  204 |                            [01;36m[Kvoid *(*__start_routine) (void *)[m[K,
+      |                            [01;36m[K~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lmake: 'ConjuntoMandelbrot' is up to date.
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4[8P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8@make && [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lSegmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ ./ConjuntoMandelbrot mandelbrot 10 6 40 4[8@make && [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4[8P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[8@make && [C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+[01m[Kmain.c:[m[K In function ‘[01m[Kmain[m[K’:
+[01m[Kmain.c:223:44:[m[K [01;31m[Kerror: [m[Kexpected expression before ‘[01m[K,[m[K’ token
+  223 |                     pthread_create(&v,NULL,[01;31m[K,[m[K(void*)&valor[i]);
+      |                                            [01;31m[K^[m[K
+make: *** [Makefile:5: main.o] Error 1
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+Segmentation fault (core dumped)
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K
+[?2004lrm -f *.o a.out *.txt *.pgm ConjuntoMandelbrot
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make clean&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4
+[?2004lgcc -lpthread -c main.c -o main.o -fopenmp -lpthread -lm
+gcc main.o -o ConjuntoMandelbrot -fopenmp -lm
+[?2004h]0;devcontainers@PcdeRe28: ~/dev/rass/ConjuntoMandelbrot[01;32mdevcontainers@PcdeRe28[00m:[01;34m~/dev/rass/ConjuntoMandelbrot[00m$ make && ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbrot 10 6 40 4clean[K&& ./ConjuntoMandelbrot mandelbro
