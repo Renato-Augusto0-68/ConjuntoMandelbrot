@@ -17,6 +17,15 @@ typedef struct dados{
     int *storage;
 }dados;
 
+
+
+int *alocarVetor(void *args){
+
+
+
+}
+
+
 void *calcularNovo(void *arg){
     dados *info = (dados *)arg;
     for(int i2=(info->val);i2<(info->fim);i2+=(info->inicio)){
@@ -165,6 +174,7 @@ int main(int argc, char *argv[]){
             }    
             if(modo==1){
                 start_time=clock();
+                
                 for(int i2=0;i2<largura;i2++){
                     double x=0.0;
                     double y=0.0;
@@ -208,6 +218,7 @@ int main(int argc, char *argv[]){
             }if(modo==3){
 
                 start_time=clock();
+                
                 for(int i=0;i<num_threads;i++){
                     infos3[i].x_p=x_p; 
                     infos3[i].total=total;
@@ -226,6 +237,25 @@ int main(int argc, char *argv[]){
                     pthread_t v = val[i];
                     pthread_join(val[i],NULL);
                 }
+
+                for(int i2=0;i2<largura;i2++){
+                    double x=0.0;
+                    double y=0.0;
+                    double c_real = x1+i2*(x_p);
+                    double c_imag = y1+i1*(y_p);
+                    double interacoes =0.0;
+                    while(((x*x)+(y*y))<=4.0 && interacoes<total){
+                            double x_temp = (x*x) - (y*y) + c_real; 
+                            y= 2*x*y +(c_imag);
+                            x= x_temp;
+                            interacoes++;
+                        }
+                        double valor = ((255.0*interacoes)/total);
+                        valores3[i1*largura + i2] = (int)valor;            
+                    }
+
+
+
 
                 end_time=clock();
         }
