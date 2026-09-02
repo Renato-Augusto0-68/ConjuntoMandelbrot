@@ -38,29 +38,6 @@ void *limparVetor(void *arg){
 }
 
 
-void *calcularNovo(void *arg){
-    dados *info = (dados *)arg;
-    for(int i2=(info->val);i2<(info->fim);i2+=(info->inicio)){
-        for(int i3=0;i3<info->larg;i3++){
-            double x=0.0;
-            double y=0.0;
-            double c_real = -2.0+i3*(info->x_p);
-            double c_imag = -1.5+(i2)*(info->y_p);
-            double interacoes =0.0;
-                
-            while(((x*x)+(y*y))<=4.0 && interacoes<(info->total)){
-                double x_temp = (x*x) - (y*y) + c_real; 
-                y= 2*x*y +(c_imag);
-                x= x_temp;
-                interacoes++;
-            }
-            double valor = ((255.0*interacoes)/info->total);
-            info->storage[(i2)*(info->larg) + i3] = (int)valor;            
-        }  
-    }
-}
-
-
 void *calcularXYPthrd(void *arg){
     dados *info = (dados *)arg;
     for(int i2=(info->inicio);i2<info->fim;i2++){
