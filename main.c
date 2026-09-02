@@ -19,7 +19,9 @@ typedef struct dados{
 
 typedef struct dados3{
     int larg;
+    int v;
     int alt;
+    int nt;
     int *storage;
 }dados3;
 
@@ -27,8 +29,11 @@ void *limparVetor(void *arg){
     dados3* info = (dados3*)arg;
     int l=(info->larg);
     int a = (info->alt);
-    for(int i=0;i<(l*a);i++){
-        info->storage[i]=0;
+    for(int i=info->v;i<(a);i+=(info->nt)){
+        for(int i2=0;i2<l;i2++){
+            if(info->storage[i*l + i2]<0)
+                info->storage[i*l+i2]=-1;
+        }
     }
 }
 
@@ -229,6 +234,8 @@ int main(int argc, char *argv[]){
                     valor[i].storage = valores3;
                     valor[i].alt=altura;
                     valor[i].larg=largura;
+                    valor[i].v=i;
+                    valor[i].nt=num_threads;
                     pthread_create(&val3[i],NULL,limparVetor,(void*)&valor[i]);
                 }
                 for(int i=0;i<num_threads;i++){
